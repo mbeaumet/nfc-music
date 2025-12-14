@@ -102,31 +102,5 @@
   </div>
 
 </div>
-
-  <h2>Test des images</h2>
-<div id="gallery"></div>
-
-<script>
-  // Liste des fichiers à tester
-  const images = [
-    "destin.png",
-    "autre_album1.png",
-    "autre_album2.jpg"
-    // Ajoute ici tous les noms d'images de ton dossier
-  ];
-
-  const gallery = document.getElementById("gallery");
-
-  images.forEach(img => {
-    const imageElement = document.createElement("img");
-    imageElement.src = "images/" + img; // chemin relatif
-    imageElement.alt = img;
-    imageElement.style.width = "150px"; // pour voir toutes les images facilement
-    imageElement.style.margin = "10px";
-    gallery.appendChild(imageElement);
-  });
-</script>
-
-
 </body>
 </html>
